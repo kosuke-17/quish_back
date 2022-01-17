@@ -1,13 +1,11 @@
 import mongoose from "mongoose";
 
 const itemSchema = mongoose.Schema({
-  id: Number,
-  name: String,
-  price: Number,
-  type: String,
-  image: String,
-  color: String,
-  description: String,
+  _id: String,
+  userId: Number,
+  title: String,
+  content: String,
+  tags: Array,
 });
 
 export default mongoose.model("itemLists", itemSchema);
