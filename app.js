@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   res.send("itemリスト");
 });
 
-app.post("/user", async (req, res) => {
+app.post("/user/register", async (req, res) => {
   const userData = req.body;
   const user = new Usermodel({
     _id: new mongoose.Types.ObjectId(),
